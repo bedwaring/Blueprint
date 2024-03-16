@@ -1,0 +1,7 @@
+CPP_VERSION c++20
+
+<<<<<<< HEAD
+TARGET blueprint SRC src/main.cpp
+=======
+TARGET blueprint SRC src/main.cpp
+>>>>>>> 32f8080722141a04dee72f00ce7de335eff1d230
