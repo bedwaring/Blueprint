@@ -11,6 +11,6 @@ CPP_VERSION c++17
 
 TARGET hello SRC src/helloworld.cpp
 
-u can save the code into a file called Blueprint.bp and do blueprint Ninja/Makefile (you choose either Ninja or Makefile, we only support them for now)
+u can save the code into a file called Blueprint.bp and do blueprint Ninja/Makefile .. (the .. specifies where the Blueprint.bp file is so instead of .. if u typed nothing it would look in the current directory) (you choose either Ninja or Makefile, we only support them for now)
 
 it will save the output to a Makefile or a build.ninja file depending on what you selected. it reads a file called Blueprint.bp so make sure to name the file with the blueprint code to Blueprint.bp (blueprint code = CPP_VERSION c++17 TARGET hello SRC src/helloworld.cpp, etc, ive decided to name the custom lang blueprint)
