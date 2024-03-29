@@ -1,0 +1,3 @@
+CPP_VERSION c++20
+
+TARGET blueprint SRC src/main.cpp
