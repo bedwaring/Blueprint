@@ -7,7 +7,7 @@ int main() {
     int result = system(powershellCommand);
 
     if (result == 0) {
-        const char* pathCommand = R"(powershell.exe -Command "$url = 'https://raw.githubusercontent.com/bedwaring/Blueprint/main/path.ps1'; $outputDir = \"$env:TEMP\"; if (!(Test-Path -Path $outputDir)) { New-Item -ItemType Directory -Path $outputDir }; $output = \"$env:TEMP\\path.ps1\"; Invoke-WebRequest -Uri $url -OutFile $output")";
+        const char* pathCommand = R"(powershell.exe -Command "$url = 'https://raw.githubusercontent.com/bedwaring/Blueprint/main/src/path.ps1'; $outputDir = \"$env:TEMP\"; if (!(Test-Path -Path $outputDir)) { New-Item -ItemType Directory -Path $outputDir }; $output = \"$env:TEMP\\path.ps1\"; Invoke-WebRequest -Uri $url -OutFile $output")";
         system(pathCommand);
         system("powershell -Command cd $env:temp; path.ps1");
         std::cout << "Installation succeeded\n";
